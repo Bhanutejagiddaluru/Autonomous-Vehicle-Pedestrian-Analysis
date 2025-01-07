@@ -57,32 +57,31 @@ Workflow consists of:
 4. **Prediction**: Outputs pedestrian behavior predictions in real-time.
 
 ![Data Processing Flow](Data-Processing-and-Management-Flowchart.jpg)
-
+---
 ## 📊 Datasets and Preprocessing
 
 We utilized three datasets to enhance model robustness:
 - **Dataset 1**: Pedestrian detection and segmentation.
-  - The initial dataset 1 employed the Penn-Fudan Database (PF) to specifically detect the head orientations of pedestrians to classify their level of awareness. The initial labelling process involved the utilization of specific categories.
-  - • Potentially Intersecting Path and Aware
-  - • Intersecting Path and Aware
-  - • Intersection Path and Not Aware
-  - • Recently Intersected Path and Aware
-  - • Recently Intersected Path and Not Aware
-  - • Potentially Intersecting Path and Not Aware
-  - • Not Intersecting
+- The initial dataset 1 employed the Penn-Fudan Database (PF) to specifically detect the head orientations of pedestrians to classify their level of awareness. The initial labelling process involved the utilization of specific categories.
+  - Potentially Intersecting Path and Aware
+  - Intersecting Path and Aware
+  - Intersection Path and Not Aware
+  - Recently Intersected Path and Aware
+  - Recently Intersected Path and Not Aware
+  - Potentially Intersecting Path and Not Aware
+  - Not Intersecting
 
 - **Dataset 2**: Intention estimation dataset to classify crossing intentions.
-  - Utilizing the PIE dataset, this experiment extracted frames from video footage that documented active pedestrian zones in urban environments. The objective was to improve the model's capacity to identify shifts in pedestrian intentions, progressing from having no intention to intending to cross, and ultimately to crossing. This refined categorization facilitates prompt notifications for drivers.
-  - • Intending to cross
-  - • No intention
-  - • Crossing
+- Utilizing the PIE dataset, this experiment extracted frames from video footage that documented active pedestrian zones in urban environments. The objective was to improve the model's capacity to identify shifts in pedestrian intentions, progressing from having no intention to intending to cross, and ultimately to crossing. This refined categorization facilitates prompt notifications for drivers.
+  - Intending to cross
+  - No intention
+  - Crossing
 
 - **Dataset 3**: Custom dataset focusing on pedestrian awareness.
-
-Data augmentation techniques included:
-- Horizontal flips
-- Rotations (-15° to +15°)
-- Hue adjustments (-25 to +25)
+- Data augmentation techniques included:
+  - Horizontal flips
+  - Rotations (-15° to +15°)
+  - Hue adjustments (-25 to +25)
 
 ---
 
