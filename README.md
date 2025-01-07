@@ -47,6 +47,7 @@ Pedestrian behavior analysis is crucial for autonomous driving systems to predic
 ## 🏗️ Architecture
 ![Architecture Flowchart](Architecture.jpg)
 *Figure: Architecture*
+
 Figure illustrates the workflow of data processing for a pedestrian detection model. Starting with datasets sourced from Kaggle, Papers with Code, and custom data, it follows the data's journey via HTTPS and RESTful API protocols through Roboflow, where augmentation and annotation occur before the processed datasets are exported to Google Drive for model training and storage. The project examined multiple datasets to address the complexity of real-world pedestrian behavior analysis. Multiple pedestrians per image, a variety of pedestrian stances, and realworld image quality were chosen for each dataset. Our method stressed the importance of combining multiple data sources to 
 
 ---
@@ -164,6 +165,7 @@ End
 ```
 ## 🏆 Results
 ![Result](result1.jpg)
+
 *Figure: The model accurately detects a pedestrian as 'Aware' with a high confidence score., 'Not Aware', aiding in proactive accident prevention.*
 
 ### Key Predictions
