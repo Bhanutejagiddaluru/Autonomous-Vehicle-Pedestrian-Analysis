@@ -4,7 +4,7 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ---
 
-## 🔧 Project Overview
+## Project Overview
 ![Project Overview](Project-overview.jpg)
 
 - **Objective**: Analyze and classify pedestrian behavior during road-crossing scenarios.
