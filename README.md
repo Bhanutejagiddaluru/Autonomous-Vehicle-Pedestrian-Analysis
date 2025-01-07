@@ -181,7 +181,7 @@ End
 | **Our YOLOv9 Model**      | 92.4%        | 91.0%      | 93.8%         | 92.5%        | 9.0%          |
 | **Existing YOLO Model**   | 86%          | 85%        | 89%           | 87.5%        | 22%           |
 
-This comparative table 4, presents a clear distinction between the performance of our implemented YOLOv9 model
+This comparative table , presents a clear distinction between the performance of our implemented YOLOv9 model
 and a pre-existing version of YOLO in terms of pedestrian detection accuracy. Our YOLOv9 model surpasses the existing YOLO model across all listed performance metrics, underscoring significant improvements in detection capabilities. Notably, the F1 Score for our model stands at 92.4% compared to 86% of the existing model, indicating a better balance between precision and recall in our implementation. Furthermore, the table highlights a higher Recall (91.0% vs. 85%), Precision (93.8% vs. 89%), and Accuracy (92.5% vs. 87.5%) for our YOLOv9 model, demonstrating its enhanced ability to correctly identify pedestrian behavior. The Miss Rate of our model is more than halved at 9.0% against the existing model’s 22%, reflecting a significant reduction in the chances of missing actual pedestrian detections. This comparative analysis clearly suggests that the enhancements made in our YOLOv9 model have resulted in superior performance, making it a more reliable tool for real-time applications in pedestrian behavior analysis.
 
 ---
