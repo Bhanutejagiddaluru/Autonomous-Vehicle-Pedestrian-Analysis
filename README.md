@@ -1,19 +1,23 @@
 # 🚀 Autonomous Vehicle Pedestrian Analysis
 
-Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This project focuses on developing advanced pedestrian detection models to classify pedestrian behavior in real-time, leveraging the YOLOv9 model. Our aim is to enhance road safety through robust pedestrian behavior analysis.
+Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This project focuses on developing advanced pedestrian detection models to classify pedestrian behavior in real-time, leveraging the YOLOv9 model. Main aim is to enhance road safety through robust pedestrian behavior analysis.
 
 ---
 
 ## 🔧 Project Overview
+![Aware Pedestrian Detected](Aware-Pedestrain-Detected-by-Vehicle.jpg)
 
-- **Objective**: Analyze and classify pedestrian behavior as 'Aware' or 'Not Aware' during road-crossing scenarios.
+![Not Aware Pedestrian Detected](Not-Aware-Pedestrain-Detected-By-Vehicle.jpg)
+
+
+- **Objective**: Analyze and classify pedestrian behavior during road-crossing scenarios.
 - **Tech Stack**: YOLOv9, Roboflow, Python, Google Colab, RESTful API.
 - **Datasets Used**:
   - [Penn-Fudan Database for Pedestrian Detection and Segmentation](https://www.kaggle.com/datasets/psvishnu/pennfudan-database-for-pedestrian-detection-zip)
   - [Pedestrian Intention Estimation Dataset](https://paperswithcode.com/dataset/pie)
   - Custom dataset from real-world pedestrian scenarios.
 
-![Architecture Flowchart](Architecture.jpg)
+
 
 ---
 
@@ -31,12 +35,19 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ## 🌟 Introduction
 
-Pedestrian behavior analysis is crucial for autonomous driving systems to predict and react to real-world road scenarios. This project leverages deep learning and real-time detection to classify pedestrians into 'Aware' and 'Not Aware' categories, enhancing safety for both pedestrians and drivers.
+Pedestrian behavior analysis is crucial for autonomous driving systems to predict and react to real-world road scenarios. 
+- Prioritizing safety is the utmost concern when designing autonomous vehicles 
+- Many factors affect pedestrian safety
+- Autonomous vehicles must be aware of their surroundings to prevent accidents
+- It could be challenging for both the pedestrian and the driver, as their motions are notoriously unpredictable and certain
+- Though many pedestrians know not to go, children and young walkers who aren't paying attention risk entering traffic
+- Vehicles that have pedestrian awareness have fewer accidents and avoid traffic congestion. 
+- Pedestrian behaviour is the primary subject of this research, which takes into account variables such as crossing, not crossing, intention, and more
 
 ---
 
 ## 🏗️ Architecture
-
+![Architecture Flowchart](Architecture.jpg)
 Our workflow consists of:
 1. **Dataset Collection**: Sourcing from Kaggle, Papers with Code, and custom data.
 2. **Data Annotation and Augmentation**: Using Roboflow for splitting, labeling, and augmenting datasets.
