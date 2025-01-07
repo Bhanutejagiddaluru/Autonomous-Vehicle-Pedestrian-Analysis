@@ -6,7 +6,6 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ## 🔧 Project Overview
 ![Project Overview](Project-overview.jpg)
-*Figure: Project Overview*
 
 - **Objective**: Analyze and classify pedestrian behavior during road-crossing scenarios.
 - **Tech Stack**: YOLOv9, Roboflow, Python, Google Colab, RESTful API.
@@ -58,9 +57,10 @@ Workflow consists of:
 3. **Model Training**: YOLOv9 is trained using Google Colab and stored in Google Drive.
 4. **Prediction**: Outputs pedestrian behavior predictions in real-time.
 
-![Data Processing Flow](Data-Processing-and-Management-Flowchart.jpg)
 ---
 ## 📊 Datasets and Preprocessing
+
+![Data Processing Flow](Data-Processing-and-Management-Flowchart.jpg)
 
 Utilized three datasets to enhance model robustness:
 - **Dataset 1**: Pedestrian detection and segmentation.
