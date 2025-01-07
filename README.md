@@ -43,7 +43,7 @@ Our workflow consists of:
 3. **Model Training**: YOLOv9 is trained using Google Colab and stored in Google Drive.
 4. **Prediction**: Outputs pedestrian behavior predictions in real-time.
 
-![Data Processing Flow](Data Processing and Management Flowchart.jpg)
+![Data Processing Flow](Data-Processing-and-Management-Flowchart.jpg)
 
 ---
 
@@ -77,10 +77,10 @@ Data augmentation techniques included:
 
 ### Key Predictions
 
-![Aware Pedestrian Detected](Aware Pedestrain Detected by Vehicle.jpg)
+![Aware Pedestrian Detected](Aware-Pedestrain-Detected-by-Vehicle.jpg)
 *Figure: The model accurately detects a pedestrian as 'Aware' with a high confidence score.*
 
-![Not Aware Pedestrian Detected](Not Aware Pedestrain Detected By Vehicle.jpg)
+![Not Aware Pedestrian Detected](Not-Aware-Pedestrain-Detected-By-Vehicle.jpg)
 *Figure: The model identifies a pedestrian as 'Not Aware', aiding in proactive accident prevention.*
 
 ---
