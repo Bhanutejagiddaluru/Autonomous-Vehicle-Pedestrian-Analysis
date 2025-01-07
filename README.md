@@ -6,6 +6,7 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ## 🔧 Project Overview
 ![Project Overview](Project-overview.jpg)
+*Figure: Project Overview*
 
 - **Objective**: Analyze and classify pedestrian behavior during road-crossing scenarios.
 - **Tech Stack**: YOLOv9, Roboflow, Python, Google Colab, RESTful API.
@@ -45,7 +46,7 @@ Pedestrian behavior analysis is crucial for autonomous driving systems to predic
 
 ## 🏗️ Architecture
 ![Architecture Flowchart](Architecture.jpg)
-
+*Figure: Architecture*
 Figure illustrates the workflow of data processing for a pedestrian detection model. Starting with datasets sourced from Kaggle, Papers with Code, and custom data, it follows the data's journey via HTTPS and RESTful API protocols through Roboflow, where augmentation and annotation occur before the processed datasets are exported to Google Drive for model training and storage. The project examined multiple datasets to address the complexity of real-world pedestrian behavior analysis. Multiple pedestrians per image, a variety of pedestrian stances, and realworld image quality were chosen for each dataset. Our method stressed the importance of combining multiple data sources to 
 
 ---
@@ -88,10 +89,72 @@ Utilized three datasets to enhance model robustness:
 
 ---
 
-## 🧪 Model Training and Testing
+## 🧪 Model
 
 - **Model**: YOLOv9, chosen for its high accuracy and real-time performance.
+
+| **Model**        | **Architecture** | **Speed (FPS)** | **Accuracy** | **Memory Usage** | **Real-Time** |
+|-------------------|------------------|-----------------|--------------|------------------|---------------|
+| `YoloV9`         | CNN-based        | Very High       | High         | High             | Yes           |
+| `YoloV8`         | CNN-based        | High            | High         | Moderate         | Yes           |
+| `Faster R-Cnn`   | CNN-based        | Low             | Very High    | Low              | No            |
+| `SSD`            | CNN-based        | Moderate        | Moderate     | Moderate         | Yes           |
+| `HOG+SVM`        | Feature Extraction | Low          | Low          | Low              | No            |
+| `RetinaNet`      | CNN-based        | Moderate        | High         | Moderate         | Yes           |
+| `EfficientDet`   | CNN-based        | High            | Very High    | Moderate         | Yes           |
+| `Transformer`    | Attention-based  | Moderate        | High         | High             | Yes           |
+
+This model is renowned for its convolutional neural network (CNN) architecture, which provides exceptional speed and accuracy while utilizing a substantial amount of memory. As a result, it is highly suitable for real-time applications.
+YOLOv9 is distinguished by its ability to process data in real time, its utilization of a single neural network architecture, its use of spatially separated bounding boxes for object detection, and its accurate and efficient classification of objects through class probability predictions. These features contribute to its exceptional performance in swiftly and accurately detecting and classifying objects.
+
+
 - **Training**: Conducted on Google Colab with datasets split into 80% training, 15% validation, and 5% testing.
+### Pseudocode
+
+**Pseudocode for Pedestrian Behaviour Analysis using YOLOv9:**
+
+```plaintext
+Begin:
+1. Import necessary libraries (NumPy, OpenCV, PyTorch, Roboflow, etc.)
+
+2. Set up configuration paths for datasets and model weights:
+     dataset_path = "/path/to/datasets"
+     weights_path = "/path/to/yolov9/weights"
+
+3. Data Acquisition and Management:
+     - Load diverse datasets for comprehensive training (e.g., from Kaggle, custom datasets)
+     - Combine and shuffle datasets to ensure variety
+     - Split datasets into training (80%), validation (15%), and testing (5%)
+
+4. Preprocessing and Data Augmentation:
+     - Perform image resizing for uniformity
+     - Apply augmentations like horizontal flipping, rotations, and hue adjustments
+     - Annotate images with classes and bounding boxes using Roboflow
+
+5. Model Initialization:
+     - Instantiate the YOLOv9 model with pre-trained weights for transfer learning
+     - Define training parameters (input resolution, epochs, learning rate)
+
+6. Training Loop:
+     - Use mini-batch gradient descent to iteratively train the model
+     - Calculate and log loss at each iteration
+     - Employ validation set for hyperparameter tuning and avoid overfitting
+7. Model Evaluation:
+    - Assess the model with metrics such as accuracy, precision, recall, and IoU
+    - Perform detection on test images to calculate mean Average Precision (mAP)
+8. Output Analysis:
+     - Visualize the model's detection ability by plotting bounding boxes on test images
+     - Analyze the model's speed by calculating Frames Per Second (FPS)
+9. Model Persistence:
+     - Save the trained model weights for future use
+     - Document performance metrics for benchmarking
+10. Deployment (optional):
+     - Integrate the trained model into an application for real-time pedestrian detection
+     - Set up an interface for ingesting live data streams
+11. Continuous Improvement:
+     - Establish a feedback loop to collect more data and update the model periodically
+End
+
 - **Performance Metrics**:
   - Accuracy: 92.5%
   - Precision: 93.8%
