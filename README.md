@@ -21,7 +21,7 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Architecture](#🏗️architecture)
+2. [Architecture](#-architecture)
 3. [Datasets and Preprocessing](#datasets-and-preprocessing)
 4. [Model Training and Testing](#model-training-and-testing)
 5. [Results](#results)
