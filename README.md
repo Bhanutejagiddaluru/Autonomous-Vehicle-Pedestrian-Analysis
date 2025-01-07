@@ -43,7 +43,7 @@ Pedestrian behavior analysis is crucial for autonomous driving systems to predic
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 ![Architecture Flowchart](Architecture.jpg)
 *Figure: Architecture*
 
@@ -58,7 +58,7 @@ Workflow consists of:
 4. **Prediction**: Outputs pedestrian behavior predictions in real-time.
 
 ---
-## 📊 Datasets and Preprocessing
+## Datasets and Preprocessing
 
 ![Data Processing Flow](Data-Processing-and-Management-Flowchart.jpg)
 
@@ -90,7 +90,7 @@ Utilized three datasets to enhance model robustness:
 
 ---
 
-## 🧪 Model
+## Model
 
 - **Model**: YOLOv9, chosen for its high accuracy and real-time performance.
 
@@ -163,7 +163,7 @@ Begin:
 End
 
 ```
-## 🏆 Results
+## Results
 ![Result](result1.jpg)
 
 *Figure: The model accurately detects a pedestrian as 'Aware' with a high confidence score., 'Not Aware', aiding in proactive accident prevention.*
@@ -186,7 +186,7 @@ and a pre-existing version of YOLO in terms of pedestrian detection accuracy. Ou
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - **Data Expansion**: Include scenarios with varying weather conditions and diverse urban settings.
 - **Multimodal Inputs**: Integrate LiDAR and thermal imaging for enhanced detection.
@@ -194,7 +194,7 @@ and a pre-existing version of YOLO in terms of pedestrian detection accuracy. Ou
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 Would like to thank [Roboflow](https://roboflow.com/) for their annotation and augmentation tools and the contributors of the datasets for enabling this project.
 
