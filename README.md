@@ -18,10 +18,10 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ---
 
-## 📂 Table of Contents
+## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Architecture](#architecture)
+2. [Architecture](#🏗️architecture)
 3. [Datasets and Preprocessing](#datasets-and-preprocessing)
 4. [Model Training and Testing](#model-training-and-testing)
 5. [Results](#results)
@@ -30,7 +30,7 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 
 ---
 
-## 🌟 Introduction
+## Introduction
 
 Pedestrian behavior analysis is crucial for autonomous driving systems to predict and react to real-world road scenarios. 
 - Prioritizing safety is the utmost concern when designing autonomous vehicles 
