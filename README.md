@@ -90,7 +90,7 @@ Utilized three datasets to enhance model robustness:
 
 ---
 
-## Model
+## Model Training and Testing
 
 - **Model**: YOLOv9, chosen for its high accuracy and real-time performance.
 
