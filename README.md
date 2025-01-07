@@ -163,7 +163,7 @@ End
 
 ```
 ## 🏆 Results
-![Result](Result1.jpg)
+![Result](result1.jpg)
 *Figure: The model accurately detects a pedestrian as 'Aware' with a high confidence score., 'Not Aware', aiding in proactive accident prevention.*
 
 ### Key Predictions
