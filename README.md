@@ -5,10 +5,7 @@ Welcome to the **Autonomous Vehicle Pedestrian Analysis** repository! This proje
 ---
 
 ## 🔧 Project Overview
-![Aware Pedestrian Detected](Aware-Pedestrain-Detected-by-Vehicle.jpg)
-
-![Not Aware Pedestrian Detected](Not-Aware-Pedestrain-Detected-By-Vehicle.jpg)
-
+![Project Overview](Project-overview.jpg)
 
 - **Objective**: Analyze and classify pedestrian behavior during road-crossing scenarios.
 - **Tech Stack**: YOLOv9, Roboflow, Python, Google Colab, RESTful API.
@@ -48,7 +45,10 @@ Pedestrian behavior analysis is crucial for autonomous driving systems to predic
 
 ## 🏗️ Architecture
 ![Architecture Flowchart](Architecture.jpg)
-Our workflow consists of:
+
+Figure illustrates the workflow of data processing for a pedestrian detection model. Starting with datasets sourced from Kaggle, Papers with Code, and custom data, it follows the data's journey via HTTPS and RESTful API protocols through Roboflow, where augmentation and annotation occur before the processed datasets are exported to Google Drive for model training and storage. The project examined multiple datasets to address the complexity of real-world pedestrian behavior analysis. Multiple pedestrians per image, a variety of pedestrian stances, and realworld image quality were chosen for each dataset. Our method stressed the importance of combining multiple data sources to 
+
+Workflow consists of:
 1. **Dataset Collection**: Sourcing from Kaggle, Papers with Code, and custom data.
 2. **Data Annotation and Augmentation**: Using Roboflow for splitting, labeling, and augmenting datasets.
 3. **Model Training**: YOLOv9 is trained using Google Colab and stored in Google Drive.
@@ -62,8 +62,23 @@ Our workflow consists of:
 
 We utilized three datasets to enhance model robustness:
 - **Dataset 1**: Pedestrian detection and segmentation.
+    The initial dataset 1 employed the Penn-Fudan Database (PF) to specifically detect the head orientations of pedestrians to classify their level of awareness. The initial labelling process involved the utilization of specific categories.
+    • Potentially Intersecting Path and Aware
+    • Intersecting Path and Aware
+    • Intersection Path and Not Aware
+    • Recently Intersected Path and Aware
+    • Recently Intersected Path and Not Aware
+    • Potentially Intersecting Path and Not Aware
+    • Not Intersecting
+
 - **Dataset 2**: Intention estimation dataset to classify crossing intentions.
+    Utilizing the PIE dataset, this experiment extracted frames from video footage that documented active pedestrian zones in urban environments. The objective was to improve the model's capacity to identify shifts in pedestrian intentions, progressing from having no intention to intending to cross, and ultimately to crossing. This refined categorization facilitates prompt notifications for drivers.
+  • Intending to cross
+  • No intention
+  • Crossing
+
 - **Dataset 3**: Custom dataset focusing on pedestrian awareness.
+
 
 Data augmentation techniques included:
 - Horizontal flips
