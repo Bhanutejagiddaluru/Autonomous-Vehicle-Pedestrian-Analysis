@@ -61,7 +61,8 @@ Workflow consists of:
 ## 📊 Datasets and Preprocessing
 
 We utilized three datasets to enhance model robustness:
-- **Dataset 1**: Pedestrian detection and segmentation. -
+- **Dataset 1**: Pedestrian detection and segmentation.
+- 
 The initial dataset 1 employed the Penn-Fudan Database (PF) to specifically detect the head orientations of pedestrians to classify their level of awareness. The initial labelling process involved the utilization of specific categories.
   - Potentially Intersecting Path and Aware
   - Intersecting Path and Aware
