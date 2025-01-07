@@ -60,7 +60,7 @@ Workflow consists of:
 ---
 ## 📊 Datasets and Preprocessing
 
-We utilized three datasets to enhance model robustness:
+Utilized three datasets to enhance model robustness:
 - **Dataset 1**: Pedestrian detection and segmentation.
   --
   The initial dataset 1 employed the Penn-Fudan Database (PF) to specifically detect the head orientations of pedestrians to classify their level of awareness. The initial labelling process involved the utilization of specific categories.
@@ -122,8 +122,8 @@ We utilized three datasets to enhance model robustness:
 
 ## 🙏 Acknowledgements
 
-We would like to thank [Roboflow](https://roboflow.com/) for their annotation and augmentation tools and the contributors of the datasets for enabling this project.
+Would like to thank [Roboflow](https://roboflow.com/) for their annotation and augmentation tools and the contributors of the datasets for enabling this project.
 
 ---
 
-👋 **Thank you for exploring this repository!** If you have any suggestions or contributions, feel free to [open an issue](https://github.com/your-repo/issues) or submit a pull request.
+👋 **Thank you for exploring this repository!**
